@@ -17,7 +17,8 @@ Statement
 > 단일로 사용할 때 속도가 빠르다.
 >
 > 매번 컴파일을 수행해야한다.
-
+ [Statement](https://github.com/DeokgyunSHIN/DB-Connection/blob/main/Connction(Statement)/Connction(Statement).md)
+ 
 <br>
 <br>
 
