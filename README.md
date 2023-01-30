@@ -10,18 +10,23 @@ DB연결 설정
  String url ="jdbc:mariadb:// ip : 포트번호 / instance";
 ```
 
-### java를 통한 JDBC 프로그램 순서 -(CRUD)
+### Statement와 PreparedStatement 차이점 
 
-1. JDBC 드라이버 로드  (Class.forName("org.mariadb.Driver");
+Statement
 
-2. DataBase Connection 생성 (Connection connection=DriverManager.getConnection(url,dbUser,dbPassword);)
+> 단일로 사용할 때 속도가 빠르다.
+>
+> 매번 컴파일을 수행해야한다.
 
-3. SQL을 위한 Statement 객체 생성 (PreraredStatement preparedStatement= connection.prepareStatement(sql);)
+<br>
+<br>
 
-4. SQL 문장 실행 (ResultSet resultSet = paeparedStatement.executeQuery();)
+PreparedStatement
 
-(create 라면  
+> 쿼리에 인자값을 부여할 수 있다.
+>
+> 처음 프리큼파일 된 후, 이후에는 컴파일을 수행하지 않는다.
+>
+> 여러번 수행할 때 속도가 빠르다.
 
-5. SQL 실행 결과 처리 (while(rs.next()){ System.out.println(rs.getString("user_id"));)
-
-6. JDBC 객체들 연결 해제 ( resultSet.close();  preparedStatement.close();  connection.close();)
+[PreparedStatement]
