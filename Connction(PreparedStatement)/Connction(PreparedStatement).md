@@ -1,6 +1,6 @@
 # PreparedStatement 
 
-```
+```java
  import java.sql.*;
 
 public class DBTestPreparedStatement {
