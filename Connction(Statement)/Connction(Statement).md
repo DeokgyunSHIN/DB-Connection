@@ -1,6 +1,6 @@
 # 자바와 db연동 
 
-``` 
+```java
 import java.sql.*;
 
 public class DBTest {
