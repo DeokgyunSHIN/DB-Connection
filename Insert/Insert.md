@@ -1,6 +1,6 @@
 # Insert (select 와 기본 응용)
 
-``` 
+```java
  import java.sql.*;
 import java.util.Scanner;
 
