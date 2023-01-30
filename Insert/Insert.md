@@ -1,4 +1,4 @@
-# Insert (slelect 와 기본 응용)
+# Insert (select 와 기본 응용)
 
 ``` 
  import java.sql.*;
@@ -152,4 +152,4 @@ insert는  executeUpdate(); 를 사용해줘야 하는데
 
 executeUpdate();의 반환 값이 int 이고 성공을 하게 되면 1로 리턴이 된다.
 
-selelct 는 반대로 executeQuery();를 사용해줘야한다.
+select 는 반대로 executeQuery();를 사용해줘야한다.
